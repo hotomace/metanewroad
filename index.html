@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>南港新路 v8 完整詳細版</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Noto Sans TC',sans-serif;background:#f5f8fc;margin:0;color:#222}
+.header{background:linear-gradient(135deg,#00A0E9,#0077b6);color:#fff;padding:16px;position:sticky;top:0;z-index:10}
+.tabs{display:flex;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.08);position:sticky;top:68px;z-index:9;overflow-x:auto}
+.tab{flex:1;white-space:nowrap;text-align:center;padding:12px 8px;font-size:13px;cursor:pointer;border-bottom:3px solid transparent;min-width:70px}
+.tab.active{border-color:#00A0E9;color:#00A0E9;font-weight:700}
+.card{background:#fff;border-radius:12px;padding:14px;margin:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px} .grid4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:8px}
+.kpi{text-align:center;padding:8px;background:#f8fbff;border-radius:8px} .kpi .num{font-size:20px;font-weight:800;color:#0077b6} .kpi .label{font-size:11px;color:#666;margin-top:2px}
+.chart-scroll{overflow-x:auto;display:flex;gap:5px;align-items:flex-end;padding:12px 0;border-bottom:1px solid #eee}
+.insight{background:#e3f2fd;border-left:4px solid #00A0E9;padding:8px 10px;margin:8px 0;border-radius:4px;font-size:12px;line-height:1.6}
+table{width:100%;border-collapse:collapse;font-size:12px} th{background:#eef6ff;text-align:left;padding:7px;position:sticky;top:0} td{padding:7px;border-bottom:1px solid #eee}
+.badge{display:inline-block;padding:2px 6px;border-radius:10px;font-size:10px;color:#fff}
+.search{width:100%;padding:8px;border:1px solid #ddd;border-radius:8px;margin-bottom:8px;font-size:13px}
+</style>
+</head>
+<body>
+<div class="header">
+<h1 style="margin:0;font-size:18px">南港新路教育中心 v8 完整詳細版</h1>
+<p style="margin:4px 0 0;font-size:12px">938人 | 10月5.88M PV | 31新會員全表 | 2場直播90則 | 15行程22h | 最後更新 2026-10-27 12:00 | 每天11:30自動更新</p>
+</div>
+<div class="tabs">
+<div class="tab active" id="t0" onclick="showTab(0)">業績總覽</div>
+<div class="tab" id="t1" onclick="showTab(1)">會員關懷(31)</div>
+<div class="tab" id="t2" onclick="showTab(2)">直播互動(90)</div>
+<div class="tab" id="t3" onclick="showTab(3)">行程覆盤(15)</div>
+</div>
+
+<div id="tab0">
+<div class="card">
+<div class="grid4">
+<div class="kpi"><div class="num">938</div><div class="label">總人數<br>+119 (9/1起)</div></div>
+<div class="kpi"><div class="num">5.88M</div><div class="label">10月PV<br>26天</div></div>
+<div class="kpi"><div class="num">10.28M</div><div class="label">8月PV<br>最高月</div></div>
+<div class="kpi"><div class="num">58%</div><div class="label">新會員轉化<br>18/31</div></div>
+</div>
+</div>
+
+<div class="card">
+<h3 style="margin:0 0 6px">📈 每日PV趨勢 (9/1-10/26) 純HTML長條圖 - 可左右滑動</h3>
+<div style="display:flex;gap:10px;font-size:10px;margin-bottom:6px"><span><span style="display:inline-block;width:10px;height:10px;background:#ff7043"></span> 60萬+高峰</span><span><span style="display:inline-block;width:10px;height:10px;background:#00A0E9"></span> 研討會/成功學院</span><span><span style="display:inline-block;width:10px;height:10px;background:#43a047"></span> 10/26回溫</span><span><span style="display:inline-block;width:10px;height:10px;background:#e0e0e0"></span> 假日0</span></div>
+<div class="chart-scroll"><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">272k</div><div title="2026/9/23 PV:272120 人數:873 " style="width:22px;height:57px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">9/23</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">91k</div><div title="2026/9/24 PV:91949 人數:873 " style="width:22px;height:19px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">9/24</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">118k</div><div title="2026/9/25 PV:118100 人數:874 " style="width:22px;height:24px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">9/25</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">30k</div><div title="2026/9/26 PV:30000 人數:874 " style="width:22px;height:10px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">9/26</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">0k</div><div title="2026/9/27 PV:0 人數:874 " style="width:22px;height:4px;background:#e0e0e0;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">9/27</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">292k</div><div title="2026/9/28 PV:292000 人數:883 " style="width:22px;height:61px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">9/28</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">174k</div><div title="2026/9/29 PV:174996 人數:888 " style="width:22px;height:36px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">9/29</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">27k</div><div title="2026/9/30 PV:27300 人數:893 " style="width:22px;height:10px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">9/30</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">532k</div><div title="2026/10/1 PV:532404 人數:895 " style="width:22px;height:111px;background:#ff8a65;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/1</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">660k</div><div title="2026/10/2 PV:660500 人數:897 " style="width:22px;height:138px;background:#ff7043;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/2</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">643k</div><div title="2026/10/3 PV:643884 人數:899 " style="width:22px;height:135px;background:#ff7043;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/3</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">0k</div><div title="2026/10/4 PV:0 人數:901 " style="width:22px;height:4px;background:#e0e0e0;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/4</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">178k</div><div title="2026/10/5 PV:178310 人數:902 台北一日研討會" style="width:22px;height:37px;background:#00A0E9;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/5</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">538k</div><div title="2026/10/6 PV:538155 人數:904 台中一日研討會" style="width:22px;height:112px;background:#ff8a65;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/6</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">131k</div><div title="2026/10/7 PV:131450 人數:906 高雄一日研討會" style="width:22px;height:27px;background:#00A0E9;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/7</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">274k</div><div title="2026/10/8 PV:274108 人數:906 " style="width:22px;height:57px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/8</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">174k</div><div title="2026/10/9 PV:174660 人數:906 " style="width:22px;height:36px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/9</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">249k</div><div title="2026/10/10 PV:249200 人數:906 " style="width:22px;height:52px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/10</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">0k</div><div title="2026/10/11 PV:0 人數:909 " style="width:22px;height:4px;background:#e0e0e0;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/11</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">242k</div><div title="2026/10/12 PV:242480 人數:911 " style="width:22px;height:50px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/12</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">290k</div><div title="2026/10/13 PV:290620 人數:912 " style="width:22px;height:60px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/13</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">200k</div><div title="2026/10/14 PV:200000 人數:915 " style="width:22px;height:41px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/14</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">268k</div><div title="2026/10/15 PV:268285 人數:920 " style="width:22px;height:56px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/15</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">138k</div><div title="2026/10/16 PV:138160 人數:926 成功學院" style="width:22px;height:28px;background:#00A0E9;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/16</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">175k</div><div title="2026/10/17 PV:175140 人數:928 成功學院" style="width:22px;height:36px;background:#00A0E9;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/17</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">0k</div><div title="2026/10/18 PV:0 人數:929 " style="width:22px;height:4px;background:#e0e0e0;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/18</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">260k</div><div title="2026/10/19 PV:260200 人數:930 " style="width:22px;height:54px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/19</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">64k</div><div title="2026/10/20 PV:64388 人數:932 " style="width:22px;height:13px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/20</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">225k</div><div title="2026/10/21 PV:225200 人數:936 " style="width:22px;height:47px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/21</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">66k</div><div title="2026/10/22 PV:66784 人數:934 " style="width:22px;height:14px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/22</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">281k</div><div title="2026/10/23 PV:281700 人數:935 颱風假" style="width:22px;height:59px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/23</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">131k</div><div title="2026/10/24 PV:131648 人數:937 " style="width:22px;height:27px;background:#64b5f6;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/24</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">0k</div><div title="2026/10/25 PV:0 人數:937 " style="width:22px;height:4px;background:#e0e0e0;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/25</div></div><div style="display:flex;flex-direction:column;align-items:center;min-width:32px"><div style="font-size:9px">156k</div><div title="2026/10/26 PV:156500 人數:938 補假" style="width:22px;height:32px;background:#43a047;border-radius:4px 4px 0 0"></div><div style="font-size:9px;color:#666;margin-top:2px">10/26</div></div></div>
+<div class="insight">
+<b>詳細解讀：</b><br>
+• 9月總PV約 5.2M，10月至今 5.88M，已超9月<br>
+• 最高3天：9/19 667,254 (成功學院) / 10/2 660,500 / 10/3 643,884<br>
+• 假日0 PV共6天：9/6, 9/13, 9/20, 10/4, 10/11, 10/25<br>
+• 本週回溫：10/23 281,700 颱風假後 → 10/24 131,648 → 10/26 156,500 補假<br>
+• 人數成長：9/1 819人 → 10/26 938人，56天 +119人，平均每天+2.1人<br>
+• 建議：10/29 七堵拜訪明紅(市場推廣)後，觀察10/30-31是否帶來PV與新人
+</div>
+</div>
+
+<div class="card">
+<h3 style="margin:0 0 8px">📋 每日業績與人數完整明細 (9/1-10/26 共56天)</h3>
+<input class="search" id="dailySearch" placeholder="搜尋日期/備註 例如：成功學院、颱風假" onkeyup="filterTable('dailyTable','dailySearch')">
+<div style="max-height:400px;overflow:auto">
+<table id="dailyTable"><tr><th>日期</th><th>PV</th><th>總人數</th><th>±</th><th>備註</th></tr>
+<tr><td>2026/9/1</td><td>266,050</td><td>819</td><td style='color:green'>+1</td><td></td></tr><tr><td>2026/9/2</td><td>52,500</td><td>820</td><td style='color:green'>+1</td><td></td></tr><tr><td>2026/9/3</td><td>303,000</td><td>822</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/9/4</td><td>93,400</td><td>824</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/9/5</td><td>192,078</td><td>827</td><td style='color:green'>+3</td><td></td></tr><tr><td>2026/9/6</td><td>0</td><td>827</td><td style='color:#666'>0</td><td></td></tr><tr><td>2026/9/7</td><td>308,400</td><td>828</td><td style='color:green'>+1</td><td>台北一日研討會</td></tr><tr><td>2026/9/8</td><td>130,900</td><td>830</td><td style='color:green'>+2</td><td>台中一日研討會</td></tr><tr><td>2026/9/9</td><td>335,710</td><td>830</td><td style='color:#666'>0</td><td>高雄一日研討會</td></tr><tr><td>2026/9/10</td><td>102,148</td><td>834</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/9/11</td><td>197,800</td><td>836</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/9/12</td><td>30,100</td><td>838</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/9/13</td><td>0</td><td>844</td><td style='color:green'>+6</td><td></td></tr><tr><td>2026/9/14</td><td>55,394</td><td>848</td><td style='color:green'>+4</td><td></td></tr><tr><td>2026/9/15</td><td>287,600</td><td>850</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/9/16</td><td>93,264</td><td>852</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/9/17</td><td>179,040</td><td>858</td><td style='color:green'>+6</td><td></td></tr><tr><td>2026/9/18</td><td>53,090</td><td>861</td><td style='color:green'>+3</td><td>成功學院</td></tr><tr><td>2026/9/19</td><td>667,254</td><td>862</td><td style='color:green'>+1</td><td>成功學院</td></tr><tr><td>2026/9/20</td><td>0</td><td>863</td><td style='color:green'>+1</td><td></td></tr><tr><td>2026/9/21</td><td>263,700</td><td>868</td><td style='color:green'>+5</td><td></td></tr><tr><td>2026/9/22</td><td>479,631</td><td>869</td><td style='color:green'>+1</td><td></td></tr><tr><td>2026/9/23</td><td>272,120</td><td>873</td><td style='color:green'>+4</td><td></td></tr><tr><td>2026/9/24</td><td>91,949</td><td>873</td><td style='color:#666'>0</td><td></td></tr><tr><td>2026/9/25</td><td>118,100</td><td>874</td><td style='color:green'>+1</td><td></td></tr><tr><td>2026/9/26</td><td>30,000</td><td>874</td><td style='color:#666'>0</td><td></td></tr><tr><td>2026/9/27</td><td>0</td><td>874</td><td style='color:#666'>0</td><td></td></tr><tr><td>2026/9/28</td><td>292,000</td><td>883</td><td style='color:green'>+9</td><td></td></tr><tr><td>2026/9/29</td><td>174,996</td><td>888</td><td style='color:green'>+5</td><td></td></tr><tr><td>2026/9/30</td><td>27,300</td><td>893</td><td style='color:green'>+5</td><td></td></tr><tr><td>2026/10/1</td><td>532,404</td><td>895</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/10/2</td><td>660,500</td><td>897</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/10/3</td><td>643,884</td><td>899</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/10/4</td><td>0</td><td>901</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/10/5</td><td>178,310</td><td>902</td><td style='color:green'>+1</td><td>台北一日研討會</td></tr><tr><td>2026/10/6</td><td>538,155</td><td>904</td><td style='color:green'>+2</td><td>台中一日研討會</td></tr><tr><td>2026/10/7</td><td>131,450</td><td>906</td><td style='color:green'>+2</td><td>高雄一日研討會</td></tr><tr><td>2026/10/8</td><td>274,108</td><td>906</td><td style='color:#666'>0</td><td></td></tr><tr><td>2026/10/9</td><td>174,660</td><td>906</td><td style='color:#666'>0</td><td></td></tr><tr><td>2026/10/10</td><td>249,200</td><td>906</td><td style='color:#666'>0</td><td></td></tr><tr><td>2026/10/11</td><td>0</td><td>909</td><td style='color:green'>+3</td><td></td></tr><tr><td>2026/10/12</td><td>242,480</td><td>911</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/10/13</td><td>290,620</td><td>912</td><td style='color:green'>+1</td><td></td></tr><tr><td>2026/10/14</td><td>200,000</td><td>915</td><td style='color:green'>+3</td><td></td></tr><tr><td>2026/10/15</td><td>268,285</td><td>920</td><td style='color:green'>+5</td><td></td></tr><tr><td>2026/10/16</td><td>138,160</td><td>926</td><td style='color:green'>+6</td><td>成功學院</td></tr><tr><td>2026/10/17</td><td>175,140</td><td>928</td><td style='color:green'>+2</td><td>成功學院</td></tr><tr><td>2026/10/18</td><td>0</td><td>929</td><td style='color:green'>+1</td><td></td></tr><tr><td>2026/10/19</td><td>260,200</td><td>930</td><td style='color:green'>+1</td><td></td></tr><tr><td>2026/10/20</td><td>64,388</td><td>932</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/10/21</td><td>225,200</td><td>936</td><td style='color:green'>+4</td><td></td></tr><tr><td>2026/10/22</td><td>66,784</td><td>934</td><td style='color:red'>-2</td><td></td></tr><tr><td>2026/10/23</td><td>281,700</td><td>935</td><td style='color:green'>+1</td><td>颱風假</td></tr><tr><td>2026/10/24</td><td>131,648</td><td>937</td><td style='color:green'>+2</td><td></td></tr><tr><td>2026/10/25</td><td>0</td><td>937</td><td style='color:#666'>0</td><td></td></tr><tr><td>2026/10/26</td><td>156,500</td><td>938</td><td style='color:green'>+1</td><td>補假</td></tr>
+<tr style="background:#fff3e0"><td>2026/10/27</td><td style="color:red">待填</td><td>-</td><td>-</td><td>公式已修復，待填今日</td></tr>
+</table>
+</div>
+</div>
+</div>
+
+<div id="tab1" style="display:none">
+<div class="card">
+<h3>31位新會員完整關懷表 (9/23-10/22)</h3>
+<div class="grid3" style="margin-bottom:8px">
+<div class="kpi"><div class="num">31</div><div class="label">總新會員</div></div>
+<div class="kpi"><div class="num" style="color:#fb8c00">13</div><div class="label">待關懷<br>未消費</div></div>
+<div class="kpi"><div class="num" style="color:#43a047">18</div><div class="label">已消費<br>58%</div></div>
+</div>
+<input class="search" id="memberSearch" placeholder="搜尋姓名/編號/日期" onkeyup="filterTable('memberTable','memberSearch')">
+<div style="max-height:500px;overflow:auto">
+<table id="memberTable"><tr><th>註冊日</th><th>會員編號</th><th>姓名</th><th>手機</th><th>最後消費</th><th>狀態</th></tr>
+<tr><td>2026-09-23</td><td>劉東陽</td><td>4938**88</td><td>-</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-09-23</td><td>游美葳</td><td>4938**63</td><td>093****06</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-09-23</td><td>陳偉芳</td><td>4938**31</td><td>093****06</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-09-24</td><td>莊阿麵</td><td>4939**26</td><td>096****25</td><td>2026-10-15</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-09-30</td><td>林士珽</td><td>4944**17</td><td>092****21</td><td>2026-10-17</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-01</td><td>鄭翠林</td><td>4945**24</td><td>-</td><td>2026-10-21</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-01</td><td>黃慈芳</td><td>4945**64</td><td>-</td><td>2026-10-09</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-05</td><td>賴秀貞</td><td>4948**21</td><td>093****72</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-10-06</td><td>李懿心</td><td>4949**03</td><td>-</td><td>2026-10-16</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-06</td><td>周平</td><td>4949**88</td><td>-</td><td>2026-10-17</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-07</td><td>許瀞云</td><td>4950**59</td><td>-</td><td>2026-10-12</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-07</td><td>HABIBUR RAHMAN</td><td>4950**89</td><td>880****80</td><td>2026-10-08</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-11</td><td>鐘琬淯</td><td>4953**73</td><td>092****29</td><td>2026-10-19</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-11</td><td>陳冠綾</td><td>4953**56</td><td>092****29</td><td>2026-10-19</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-11</td><td>蔡國寶</td><td>4953**53</td><td>092****29</td><td>2026-10-19</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-14</td><td>林崑祈</td><td>4956**74</td><td>097****71</td><td>2026-10-17</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-14</td><td>黃妙珍</td><td>4956**71</td><td>091****30</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-10-14</td><td>黃元貞</td><td>4956**21</td><td>-</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-10-14</td><td>林芊誼</td><td>4957**16</td><td>091****12</td><td>2026-10-16</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-15</td><td>呂馥雪</td><td>4957**71</td><td>091****89</td><td>2026-10-15</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-15</td><td>童美育</td><td>4957**51</td><td>091****89</td><td>2026-10-17</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-15</td><td>張芷蓉</td><td>4957**40</td><td>091****89</td><td>2026-10-17</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-17</td><td>陳建忠</td><td>4959**35</td><td>-</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-10-19</td><td>曾慶宗</td><td>4961**59</td><td>-</td><td>2026-10-19</td><td style='color:#43a047;font-weight:700'>已消費</td></tr><tr><td>2026-10-20</td><td>郭芊妤</td><td>4962**70</td><td>097****10</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-10-20</td><td>陳彥蓁</td><td>4962**75</td><td>092****79</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-10-21</td><td>蔡舒涵</td><td>4962**14</td><td>097****91</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-10-21</td><td>蔡佩芸</td><td>4963**39</td><td>098****65</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-10-21</td><td>希蒂</td><td>4963**49</td><td>-</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-10-21</td><td>施晏淳</td><td>4963**40</td><td>097****76</td><td>-</td><td style='color:#fb8c00;font-weight:700'>待關懷</td></tr><tr><td>2026-10-22</td><td>陳王雪屏</td><td>4964**08</td><td>093****61</td><td>2026-10-22</td><td style='color:#43a047;font-weight:700'>已消費</td></tr>
+</table>
+</div>
+<p style="font-size:11px;color:#888">* 手機已馬賽克，完整資料在原Google表。待關懷名單：劉東陽、游美葳、陳偉芳、賴秀貞、黃妙珍、黃元貞、陳建忠、郭芊妤、陳彥蓁、蔡舒涵、蔡佩芸、希蒂、施晏淳</p>
+</div>
+</div>
+
+<div id="tab2" style="display:none">
+<div class="card">
+<h3>FB直播互動 +1自動對應 (2場共90則)</h3>
+<div class="grid3">
+<div class="kpi"><div class="num">40則 / 27讚</div><div class="label">10/25 王嘉楓DM<br>生活即事業</div></div>
+<div class="kpi"><div class="num">50則 / 26讚</div><div class="label">10/24 詹侑真DM<br>二次曲線 颱風天</div></div>
+<div class="kpi"><div class="num">90則</div><div class="label">總互動<br>平均22.5讚/場</div></div>
+</div>
+<table><tr><th>留言者</th><th>FB名</th><th>類型判斷</th><th>會員對應</th><th>操作</th></tr>
+<tr><td>徐瑋黛</td><td>徐瑋黛</td><td><span class="badge" style="background:#8e24aa">筆記王 6則</span></td><td>舊會員 鐵粉</td><td>已私訊筆記 ✅</td></tr>
+<tr><td>王怡真</td><td>王怡真</td><td><span class="badge" style="background:#1e88e5">+1 新朋友</span></td><td>待建檔 新朋友</td><td>已私訊 ✅</td></tr>
+<tr><td>曾淑貞</td><td>曾淑貞</td><td><span class="badge" style="background:#43a047">週年追蹤者</span></td><td>舊會員 鐵粉</td><td>已邀約現場 ✅</td></tr>
+<tr><td>艾多美南港</td><td>粉專小編</td><td><span class="badge" style="background:#9e9e9e">官方回覆</span></td><td>-</td><td>-</td></tr>
+</table>
+<div class="insight">
+<b>轉化建議：</b><br>
+• 徐瑋黛這類筆記王→邀請當小幫手，幫忙整理直播重點，轉發給13位待關懷新會員<br>
+• 王怡真 +1新朋友→私訊卡通輪播圖+回放連結，邀請10/30產品說明會(效華)<br>
+• 曾淑貞週年鐵粉→邀請分享見證，放在10/31市場擺攤文案
+</div>
+</div>
+</div>
+
+<div id="tab3" style="display:none">
+<div class="card">
+<h3>本週行程與時間覆盤 (10/26-11/01) 15任務 22小時</h3>
+<div style="display:flex;justify-content:space-between;font-size:12px"><span>完成率 26.67% (4/15)</span><span>預估22h / 實際0h / 差異-22h</span></div>
+<div style="height:10px;background:#e0e0e0;border-radius:5px;margin:8px 0"><div style="width:26.67%;height:100%;background:#00A0E9;border-radius:5px"></div></div>
+<div class="grid3">
+<div class="kpi"><div class="num">70%</div><div class="label">A-核心重要<br>15.5h</div></div>
+<div class="kpi"><div class="num">30%</div><div class="label">B-日常常規<br>6.5h</div></div>
+<div class="kpi"><div class="num">-100%</div><div class="label">工時差異率<br>實際未填</div></div>
+</div>
+</div>
+<div class="card">
+<h4>詳細行程表</h4>
+<table><tr><th>日期</th><th>時段</th><th>事項</th><th>協作者</th><th>類別</th><th>優先</th><th>預估</th><th>狀態</th></tr>
+<tr><td>10/26 一</td><td>09:00-24:00</td><td>個人休息</td><td>隨行人員</td><td>個人生活</td><td>B</td><td>-</td><td>✅已完成</td></tr>
+<tr><td>10/27 二</td><td>14:00-15:30</td><td>中心課程</td><td></td><td>中心營運</td><td>A</td><td>2h</td><td>✅已完成</td></tr>
+<tr><td>10/27 二</td><td>16:00-18:00</td><td>中心營運討論</td><td></td><td>中心營運</td><td>A</td><td>2h</td><td>⬜</td></tr>
+<tr><td>10/27 二</td><td>19:00-21:00</td><td>排中心課程</td><td></td><td>中心營運</td><td>B</td><td>2h</td><td>⬜</td></tr>
+<tr><td>10/28 三</td><td>10:00-12:00</td><td>去內湖光樺</td><td></td><td>團隊培訓</td><td>B</td><td>2h</td><td>✅已完成</td></tr>
+<tr><td>10/28 三</td><td>14:00-17:00</td><td>南港新路組織會議</td><td></td><td>團隊培訓</td><td>A</td><td>3h</td><td>⬜</td></tr>
+<tr><td>10/28 三</td><td>21:30-22:30</td><td>組織分享會</td><td></td><td>線上會議</td><td>A</td><td>1h</td><td>⬜</td></tr>
+<tr><td>10/29 四</td><td>09:30-10:00</td><td>送沈大哥的貨</td><td></td><td>臨時庶務</td><td>B</td><td>0.5h</td><td>⬜</td></tr>
+<tr><td>10/29 四</td><td>10:30-12:00</td><td>馬來西亞GSMC</td><td>婷婷,偉賢</td><td>線上會議</td><td>A</td><td>1.5h</td><td>🔄進行中</td></tr>
+<tr><td>10/29 四</td><td>14:00-16:00</td><td>中心課程</td><td></td><td>中心營運</td><td>A</td><td>1h</td><td>✅已完成</td></tr>
+<tr><td>10/29 四</td><td>17:00-20:00</td><td>七堵拜訪店家</td><td>明紅</td><td>市場推廣</td><td>A</td><td>3h</td><td>⬜重要</td></tr>
+<tr><td>10/30 五</td><td></td><td>確定中心課表</td><td></td><td>中心營運</td><td>A</td><td>2h</td><td>⬜</td></tr>
+<tr><td>10/30 五</td><td>19:00-21:00</td><td>產品說明會</td><td>效華</td><td>產品體驗</td><td>A</td><td>2h</td><td>⬜</td></tr>
+<tr><td>10/31 六</td><td>10:00-12:00</td><td>市場擺攤</td><td></td><td>市場推廣</td><td>A</td><td></td><td>⬜</td></tr>
+<tr><td>11/01 日</td><td>14:00-16:00</td><td>閱讀與筆記</td><td></td><td>個人生活</td><td>B</td><td></td><td>⬜</td></tr>
+</table>
+<div class="insight">
+<b>時間分析：</b><br>
+• 中心營運 8h (36%)：10/27 3場連發，注意休息<br>
+• 團隊培訓 5h (23%)：10/28 組織會議是關鍵<br>
+• 市場推廣 3h (14%)：七堵拜訪+市場擺攤，直接影響業績<br>
+• 線上會議 2.5h：GSMC馬來西亞連線<br>
+• 實際耗時請每天補填，才能算出哪類任務最花時間
+</div>
+</div>
+</div>
+
+<script>
+function showTab(i){
+  for(let k=0;k<4;k++){
+    document.getElementById('tab'+k).style.display=k==i?'block':'none';
+    document.getElementById('t'+k).className=k==i?'tab active':'tab';
+  }
+}
+function filterTable(tableId,inputId){
+  let q=document.getElementById(inputId).value.toLowerCase();
+  let rows=document.getElementById(tableId).getElementsByTagName('tr');
+  for(let i=1;i<rows.length;i++){
+    rows[i].style.display=rows[i].innerText.toLowerCase().includes(q)?'':'none';
+  }
+}
+</script>
+</body>
+</html>
